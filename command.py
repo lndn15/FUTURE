@@ -10,3 +10,7 @@ class BaseCommand(ABC):
     @abstractmethod
     def execute(self, args: Dict[str, Any]) -> None:  
         pass
+
+    @property
+    def help_text(self) -> str: 
+        return ""
